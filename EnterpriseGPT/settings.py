@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-y!^u#8@s)ipwi+8nufoy3s@ev!59+p)10sw-!fvtqufi&-y&a)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['66db-106-198-28-179.ngrok-free.app','127.0.0.1','informed-hardly-oyster.ngrok-free.app', 'egpt-restapi.azurewebsites.net']
+ALLOWED_HOSTS = ['66db-106-198-28-179.ngrok-free.app','127.0.0.1','informed-hardly-oyster.ngrok-free.app', 'egpt-restapi.azurewebsites.net', '169.254.136.3']
 
 
 # Application definition
