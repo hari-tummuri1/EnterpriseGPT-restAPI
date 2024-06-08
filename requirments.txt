@@ -1,0 +1,17 @@
+djangorestframework
+django-cors-headers 
+openai
+langchain
+azure-search-documents
+azure-identity
+tiktoken
+pypdf
+langchain-openai
+langchain-experimental
+presidio-analyzer
+presidio-anonymizer
+spacy
+Faker
+requests
+mysqlclient
+python-dotenv
