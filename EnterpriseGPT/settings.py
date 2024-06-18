@@ -21,7 +21,7 @@ load_dotenv(find_dotenv())
 # Get the API key  
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY') 
 AZURE_COGNITIVE_SEARCH_API_KEY = os.getenv('AZURE_COGNITIVE_SEARCH_API_KEY')
-print(OPENAI_API_KEY)
+# print(OPENAI_API_KEY)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,7 +91,7 @@ TEMPLATES = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS = []
+# CORS_ALLOWED_ORIGINS = []
 
 WSGI_APPLICATION = 'EnterpriseGPT.wsgi.application'
 
@@ -105,34 +105,34 @@ WSGI_APPLICATION = 'EnterpriseGPT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-    'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'enterprisegpt',  
-        'USER': 'egptadmin',  
-        'PASSWORD': 'Admin@1234',  
-        'HOST': 'egpt.mysql.database.azure.com',  
-        'PORT': '3306',
-        # 'OPTIONS': {  
-        #     'ssl': {  
-        #         'ca': 'BaltimoreCyberTrustRoot.crt.pem',  
-        #     },  
-        # },
-    } 
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'enterprisegpt',
-#         'USER':'root',
-#         'PASSWORD':'test'
-#     }
+
+#     # 'default': {
+#     #     'ENGINE': 'django.db.backends.sqlite3',
+#     #     'NAME': BASE_DIR / 'db.sqlite3',
+#     # }
+#     'default': {  
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': 'enterprisegpt',  
+#         'USER': 'egptadmin',  
+#         'PASSWORD': 'Admin@1234',  
+#         'HOST': 'egpt.mysql.database.azure.com',  
+#         'PORT': '3306',
+#         # 'OPTIONS': {  
+#         #     'ssl': {  
+#         #         'ca': 'BaltimoreCyberTrustRoot.crt.pem',  
+#         #     },  
+#         # },
+#     } 
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'enterprisegpt',
+        'USER':'root',
+        'PASSWORD':'test'
+    }
+}
 
 
 # Password validation
